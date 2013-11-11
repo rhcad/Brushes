@@ -21,7 +21,7 @@
 @end
 
 @implementation WDExportController {
-    UIBarButtonItem *dropbox_;
+    UIBarButtonItem *cloud_;
     UIBarButtonItem *email_;
 }
 
@@ -67,9 +67,9 @@
     [self.browserController emailPaintings:[self stringForPreferredFormat]];
 }
 
-- (void) sendToDropbox:(id)sender
+- (void) sendToCloud:(id)sender
 {
-    [self.browserController sendToDropbox:[self stringForPreferredFormat]];
+    [self.browserController sendToCloud:[self stringForPreferredFormat]];
 }
 
 - (void) enableToolbarItems
@@ -148,17 +148,17 @@
                                                  action:@selector(email:)];
     }
     
-    if (!dropbox_) {
-        dropbox_ = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Send to Dropbox", @"Send to Dropbox")
+    if (!cloud_) {
+        cloud_ = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Send to Cloud", @"Send to Cloud")
                                                     style:UIBarButtonItemStyleBordered
                                                    target:self
-                                                   action:@selector(sendToDropbox:)];
+                                                   action:@selector(sendToCloud:)];
     }
     
     UIBarButtonItem *flexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                               target:nil action:nil];
     
-    return @[email_, flexible, dropbox_];
+    return @[email_, flexible, cloud_];
 }
 
 - (void) viewWillAppear:(BOOL)animated

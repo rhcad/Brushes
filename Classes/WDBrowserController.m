@@ -9,7 +9,6 @@
 //  Copyright (c) 2008-2013 Steve Sprang
 //
 
-#import <DropboxSDK/DropboxSDK.h>
 #import "UIView+Additions.h"
 #import "WDActiveState.h"
 #import "WDActivity.h"
@@ -58,7 +57,7 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     
     UIBarButtonItem *importItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemOrganize
                                                                                 target:self
-                                                                                action:@selector(showDropboxImportPanel:)];
+                                                                                action:@selector(showCloudImportPanel:)];
     
     UIBarButtonItem *cameraItem = nil;
     if (ALLOW_CAMERA_IMPORT && [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -150,15 +149,8 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     }
 }
 
-- (void) reallySendToDropbox:(NSString *)format
+- (void) reallySendToCloud:(NSString *)format
 {
-    if (!restClient_) {
-        restClient_ = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
-        restClient_.delegate = self;
-        
-        [restClient_ loadMetadata:@"/"];
-    }
-    
     NSString *contentType = [WDDocument contentTypeForFormat:format];
     [self startExportActivity:contentType];
     
@@ -171,8 +163,8 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
 
         NSError *err = nil;
         if ([document writeTemp:path type:contentType error:&err]) {
-            [restClient_ uploadFile:[path lastPathComponent] toPath:[self appFolderPath]
-                    withParentRev:nil fromPath:path];
+            //[restClient_ uploadFile:[path lastPathComponent] toPath:[self appFolderPath]
+            //        withParentRev:nil fromPath:path];
             [activities_ removeActivityWithFilepath:path];
             [activities_ addActivity:[WDActivity activityWithFilePath:path type:WDActivityTypeUpload]];
             [filesBeingUploaded_ addObject:path];
@@ -184,15 +176,15 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     [iterator processNext];
 }
 
-- (void) sendToDropbox:(NSString *)format
+- (void) sendToCloud:(NSString *)format
 {
-    [self dismissPopoverAnimated:[[DBSession sharedSession] isLinked]];
+    //[self dismissPopoverAnimated:[[DBSession sharedSession] isLinked]];
     
-    if (![self dropboxIsLinked]) {
-        WDAppDelegate *delegate = (WDAppDelegate *) [UIApplication sharedApplication].delegate;
-        delegate.performAfterDropboxLoginBlock = ^{ [self reallySendToDropbox:format]; };
+    if (![self CloudIsLinked]) {
+        //WDAppDelegate *delegate = (WDAppDelegate *) [UIApplication sharedApplication].delegate;
+        //delegate.performAfterCloudLoginBlock = ^{ [self reallySendToCloud:format]; };
     } else {
-        [self reallySendToDropbox:format];
+        [self reallySendToCloud:format];
     }
 }
 
@@ -240,11 +232,6 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(paintingsDeleted:)
                                                  name:WDPaintingsDeleted
-                                               object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(dropboxUnlinked:)
-                                                 name:WDDropboxWasUnlinkedNotification
                                                object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -608,11 +595,6 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     shareItem_.enabled = [selectedPaintings_ count] == 0 ? NO : YES;
 }
 
-- (void)restClient:(DBRestClient*)client uploadedFile:(NSString*)destPath from:(NSString*)srcPath
-{
-    [self stopUploadActivity:srcPath];
-}
-
 - (void) deleteSelectedPaintings
 {
     NSString *format = NSLocalizedString(@"Delete %d Paintings", @"Delete %d Paintings");
@@ -728,20 +710,14 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     }
 }
 
-- (void) dropboxUnlinked:(NSNotification *)aNotification
+- (void) CloudUnlinked:(NSNotification *)aNotification
 {
     [self dismissPopoverAnimated:YES];
 }
 
-- (BOOL) dropboxIsLinked
+- (BOOL) CloudIsLinked
 {
-    if ([[DBSession sharedSession] isLinked]) {
-        return YES;
-    } else {
-        [self dismissPopoverAnimated:NO];
-        [[DBSession sharedSession] linkUserId:nil fromController:self];
-        return NO;
-    }
+    return NO;
 }
 
 #pragma mark - Managing View Controllers
@@ -841,7 +817,7 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     [self showController:controller from:sender];
 }
 
-- (void) reallyShowDropboxImportPanel:(id)sender
+- (void) reallyShowCloudImportPanel:(id)sender
 {
 	WDImportController *controller = nil;
     
@@ -853,13 +829,13 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     [self showController:controller from:sender];
 }
 
-- (void) showDropboxImportPanel:(id)sender
+- (void) showCloudImportPanel:(id)sender
 {
-    if (![self dropboxIsLinked]) {
-        WDAppDelegate *delegate = (WDAppDelegate *) [UIApplication sharedApplication].delegate;
-        delegate.performAfterDropboxLoginBlock = ^{ [self reallyShowDropboxImportPanel:sender]; };
+    if (![self CloudIsLinked]) {
+        //WDAppDelegate *delegate = (WDAppDelegate *) [UIApplication sharedApplication].delegate;
+        //delegate.performAfterCloudLoginBlock = ^{ [self reallyShowCloudImportPanel:sender]; };
 	} else {
-        [self reallyShowDropboxImportPanel:sender];
+        [self reallyShowCloudImportPanel:sender];
     }
 }
 
@@ -936,26 +912,22 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
     }
 }
 
-- (void) importController:(WDImportController *)controller didSelectDropboxItems:(NSArray *)dropboxItems
+- (void) importController:(WDImportController *)controller didSelectCloudItems:(NSArray *)CloudItems
 {
-	if (!restClient_) {
-		restClient_ = [[DBRestClient alloc] initWithSession:[DBSession sharedSession]];
-		restClient_.delegate = self;
-	}
-    
     NSString    *downloadsDirectory = [NSTemporaryDirectory() stringByAppendingString:@"Downloads/"];
     BOOL        isDirectory = NO;
+    NSString    *path = @"?.vg";
     
     if (![[NSFileManager defaultManager] fileExistsAtPath:downloadsDirectory isDirectory:&isDirectory] || !isDirectory) {
         [[NSFileManager defaultManager] createDirectoryAtPath:downloadsDirectory withIntermediateDirectories:YES attributes:nil error:NULL];
     }
     
-	for (DBMetadata *item in dropboxItems) {
-		NSString *downloadPath = [downloadsDirectory stringByAppendingFormat:@"%@", [item.path lastPathComponent]];
+	for (NSObject *item in CloudItems) {
+		NSString *downloadPath = [downloadsDirectory stringByAppendingFormat:@"%@", [path lastPathComponent]];
         
         // make sure we're not already downloading/importing this file
         if (!activities_.count || ![activities_ activityWithFilepath:downloadPath]) {
-            [restClient_ loadFile:item.path intoPath:downloadPath];
+            //[restClient_ loadFile:item.path intoPath:downloadPath];
             [activities_ addActivity:[WDActivity activityWithFilePath:downloadPath type:WDActivityTypeDownload]];
         }
 	}
@@ -993,82 +965,6 @@ static NSString *WDAttachmentNotification = @"WDAttachmentNotification";
                                          @"Brushes could not import “%@”. There is not enough available memory.");
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Import Problem", @"Import Problem")
                                                         message:[NSString stringWithFormat:format, filename]
-                                                       delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
-                                              otherButtonTitles:nil];
-    [alertView show];
-}
-
-- (void) restClient:(DBRestClient*)client uploadProgress:(CGFloat)progress forFile:(NSString*)destPath from:(NSString*)srcPath;
-{
-    [activities_ updateProgressForFilepath:srcPath progress:progress];
-}
-
-- (void) restClient:(DBRestClient*)client loadProgress:(CGFloat)progress forFile:(NSString*)destPath
-{
-    [activities_ updateProgressForFilepath:destPath progress:progress];
-}
-
-- (void) restClient:(DBRestClient*)client loadedFile:(NSString*)downloadPath
-{
-    NSString    *extension = [[downloadPath pathExtension] lowercaseString];
-    NSString    *filename = [downloadPath lastPathComponent];
-    
-    WDActivity  *downloadActivity = [activities_ activityWithFilepath:downloadPath];
-    
-    if ([extension isEqualToString:@"brushes"]) {
-        WDActivity *importActivity = [WDActivity activityWithFilePath:downloadPath type:WDActivityTypeImport];
-        [activities_ addActivity:importActivity];
-           
-        NSError *error;
-        [[WDPaintingManager sharedInstance] installPaintingFromURL:[NSURL fileURLWithPath:downloadPath] error:&error];
-        [[NSFileManager defaultManager] removeItemAtPath:downloadPath error:NULL];
-        [activities_ removeActivity:importActivity];
-        if (error && error.code == 2) {
-            [self showImportTooLargeMessage:filename];
-        } else if (error) {
-            [self showImportErrorMessage:filename];
-        }
-    } else if ([WDImportController canImportType:extension]) {
-		BOOL success = [[WDPaintingManager sharedInstance] createNewPaintingWithImageAtURL:[NSURL fileURLWithPath:downloadPath]];
-        if (!success) {
-            [self showImportErrorMessage:filename];
-        }
-        
-        [[NSFileManager defaultManager] removeItemAtPath:downloadPath error:NULL];
-	}
-    
-    // remove the download activity. do this last so the activity count doesn't drop to 0
-    [activities_ removeActivity:downloadActivity];
-}
-
-- (void) restClient:(DBRestClient*)client loadFileFailedWithError:(NSError*)error
-{
-	NSString *downloadPath = [[error userInfo] valueForKey:@"destinationPath"];
-	
-    [activities_ removeActivityWithFilepath:downloadPath];
-	[[NSFileManager defaultManager] removeItemAtPath:downloadPath error:NULL];
-
-    NSString *format = NSLocalizedString(@"There was a problem downloading “%@”. Check your network connection and try again.",
-                                         @"There was a problem downloading“%@”. Check your network connection and try again.");
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Download Problem", @"Download Problem")
-                                                        message:[NSString stringWithFormat:format, [downloadPath lastPathComponent]]
-                                                       delegate:nil
-                                              cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
-                                              otherButtonTitles:nil];
-    [alertView show];
-}
-
-- (void)restClient:(DBRestClient*)client uploadFileFailedWithError:(NSError*)error
-{
-    NSString *srcPath = [[error userInfo] valueForKey:@"sourcePath"];
-	
-    [self stopUploadActivity:srcPath];
-    
-    NSString *format = NSLocalizedString(@"There was a problem uploading “%@”. Check your network connection and try again.",
-                                         @"There was a problem uploading“%@”. Check your network connection and try again.");
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Upload Problem", @"Upload Problem")
-                                                        message:[NSString stringWithFormat:format, [srcPath lastPathComponent]]
                                                        delegate:nil
                                               cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
                                               otherButtonTitles:nil];

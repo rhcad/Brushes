@@ -13,7 +13,6 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import "WDImportController.h"
 #import "WDGridView.h"
-#import <DropboxSDK/DBRestClient.h>
 
 @class WDActivityManager;
 @class WDLabel;
@@ -27,7 +26,7 @@
 @class WDMenu;
 
 @interface WDBrowserController : UIViewController <UIScrollViewDelegate, UIActionSheetDelegate, UIPopoverControllerDelegate, WDGridViewDataSource,
-                                                    DBRestClientDelegate, MFMailComposeViewControllerDelegate, WDImportControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIAlertViewDelegate>
+                                                    MFMailComposeViewControllerDelegate, WDImportControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIAlertViewDelegate>
 {
     UIActionSheet           *deleteSheet_;
     
@@ -43,7 +42,6 @@
     
     UIImagePickerController *pickerController_;
     
-    DBRestClient            *restClient_;
     NSMutableSet            *filesBeingUploaded_;
     WDActivityManager       *activities_;
 
@@ -63,7 +61,7 @@
 - (void) properlyEnableNavBarItems;
 
 - (void) emailPaintings:(NSString *)format;
-- (void) sendToDropbox:(NSString *)format;
+- (void) sendToCloud:(NSString *)format;
 
 - (void) createNewPainting:(CGSize)size;
 

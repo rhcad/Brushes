@@ -31,10 +31,9 @@
 		29E733F715DF07670070C18B /* WDSleepTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E733F615DF07670070C18B /* WDSleepTimer.m */; };
 		29EB7BA2153F45AC00168901 /* WDAddPath.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542489 /* WDAddPath.m */; };
 		29FF9389145223600000B6BB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29FF93881452235F0000B6BB /* AudioToolbox.framework */; };
-		5D1CF74D138C7BAB008979B3 /* DBMetadata+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CF74C138C7BAB008979B3 /* DBMetadata+Additions.m */; };
 		5D348D891386FDA200BB0047 /* WDImportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D348D881386FDA200BB0047 /* WDImportController.m */; };
-		5D3C1A76138771900040D261 /* dropbox_icon_directory.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C1A74138771900040D261 /* dropbox_icon_directory.png */; };
-		5D3C1A77138771900040D261 /* dropbox_icon_generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C1A75138771900040D261 /* dropbox_icon_generic.png */; };
+		5D3C1A76138771900040D261 /* cloud_icon_directory.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C1A74138771900040D261 /* cloud_icon_directory.png */; };
+		5D3C1A77138771900040D261 /* cloud_icon_generic.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D3C1A75138771900040D261 /* cloud_icon_generic.png */; };
 		6B00DA531405F65F00E45409 /* WDActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00DA521405F65E00E45409 /* WDActivity.m */; };
 		6B00DA5A1406022B00E45409 /* WDActivityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00DA591406022B00E45409 /* WDActivityManager.m */; };
 		6B00DA5D140604CE00E45409 /* WDActivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B00DA5C140604CE00E45409 /* WDActivityController.m */; };
@@ -90,8 +89,8 @@
 		6B1DDBE51582C890008B29A9 /* shadow_topright.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B1DDBDD1582C890008B29A9 /* shadow_topright.png */; };
 		6B1E107415ED6D41006128D8 /* Samples HD in Resources */ = {isa = PBXBuildFile; fileRef = 6B1E107315ED6D41006128D8 /* Samples HD */; };
 		6B1E108915EFEB57006128D8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6B1E108815EFEB57006128D8 /* Settings.bundle */; };
-		6B215C3E15DA050E0078DD7F /* dropbox_icon_brushes.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B215C3C15DA050E0078DD7F /* dropbox_icon_brushes.png */; };
-		6B215C3F15DA050E0078DD7F /* dropbox_icon_brushes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B215C3D15DA050E0078DD7F /* dropbox_icon_brushes@2x.png */; };
+		6B215C3E15DA050E0078DD7F /* cloud_icon_brushes.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B215C3C15DA050E0078DD7F /* cloud_icon_brushes.png */; };
+		6B215C3F15DA050E0078DD7F /* cloud_icon_brushes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B215C3D15DA050E0078DD7F /* cloud_icon_brushes@2x.png */; };
 		6B219CBC1510718B00761F18 /* checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B219CB81510718B00761F18 /* checkmark@2x.png */; };
 		6B219CBD1510718B00761F18 /* hidden@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B219CB91510718B00761F18 /* hidden@2x.png */; };
 		6B219CBE1510718B00761F18 /* lock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B219CBA1510718B00761F18 /* lock@2x.png */; };
@@ -220,7 +219,6 @@
 		6B5F0F6916005FBF00E44FB8 /* BlueToothLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B5F0F6816005FBF00E44FB8 /* BlueToothLandscape@2x.png */; };
 		6B616774137B429200BEC0BA /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 6B616773137B429200BEC0BA /* Samples */; };
 		6B624044155CE1B2003EB9B3 /* WDPaintingSizeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B624043155CE1B2003EB9B3 /* WDPaintingSizeController.m */; };
-		6B6240511561B941003EB9B3 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6240501561B941003EB9B3 /* DropboxSDK.framework */; };
 		6B648826154B4EBD0066C950 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B648824154B4EBD0066C950 /* play.png */; };
 		6B648827154B4EBD0066C950 /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B648825154B4EBD0066C950 /* play@2x.png */; };
 		6B64884E155A02810066C950 /* WDExportController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B64884D155A02810066C950 /* WDExportController.m */; };
@@ -335,7 +333,7 @@
 		6BCD534512400017002FCB27 /* WDMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD52FF12400017002FCB27 /* WDMenu.m */; };
 		6BCD534612400017002FCB27 /* WDMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD530112400017002FCB27 /* WDMenuItem.m */; };
 		6BCD535612400017002FCB27 /* WDThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BCD532112400017002FCB27 /* WDThumbnailView.m */; };
-		6BCF3AD913BA2F9F00A95E0D /* dropbox_icon_unsupported.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BCF3AD813BA2F9F00A95E0D /* dropbox_icon_unsupported.png */; };
+		6BCF3AD913BA2F9F00A95E0D /* cloud_icon_unsupported.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BCF3AD813BA2F9F00A95E0D /* cloud_icon_unsupported.png */; };
 		6BD04008156E028400C58AA6 /* WDBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD04007156E028400C58AA6 /* WDBar.m */; };
 		6BD0400C156E888B00C58AA6 /* WDColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD0400B156E888B00C58AA6 /* WDColorWell.m */; };
 		6BD0400F156EAFB400C58AA6 /* action.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD0400D156EAFB400C58AA6 /* action.png */; };
@@ -349,9 +347,9 @@
 		6BD5959C1524C2A70014A798 /* blitFromHueChromaLuma.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5959A1524C2A70014A798 /* blitFromHueChromaLuma.fsh */; };
 		6BD5959D1524C2A70014A798 /* toHueChromaLuma.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 6BD5959B1524C2A70014A798 /* toHueChromaLuma.fsh */; };
 		6BD595A215252AF10014A798 /* hue_shifter_overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A115252AEF0014A798 /* hue_shifter_overlay@2x.png */; };
-		6BD595A915252B280014A798 /* dropbox_icon_directory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A315252B260014A798 /* dropbox_icon_directory@2x.png */; };
-		6BD595AB15252B280014A798 /* dropbox_icon_generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A515252B260014A798 /* dropbox_icon_generic@2x.png */; };
-		6BD595AE15252B280014A798 /* dropbox_icon_unsupported@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A815252B270014A798 /* dropbox_icon_unsupported@2x.png */; };
+		6BD595A915252B280014A798 /* cloud_icon_directory@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A315252B260014A798 /* cloud_icon_directory@2x.png */; };
+		6BD595AB15252B280014A798 /* cloud_icon_generic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A515252B260014A798 /* cloud_icon_generic@2x.png */; };
+		6BD595AE15252B280014A798 /* cloud_icon_unsupported@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595A815252B270014A798 /* cloud_icon_unsupported@2x.png */; };
 		6BD595B615252D920014A798 /* WDToolButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD595B515252D8F0014A798 /* WDToolButton.m */; };
 		6BD595B8152BAD200014A798 /* swatch_add.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595B7152BAD1A0014A798 /* swatch_add.png */; };
 		6BD595C1152D26060014A798 /* blitWithEraseMask.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 6BD595C0152D26020014A798 /* blitWithEraseMask.fsh */; };
@@ -459,12 +457,10 @@
 		29E733F515DF07670070C18B /* WDSleepTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSleepTimer.h; sourceTree = "<group>"; };
 		29E733F615DF07670070C18B /* WDSleepTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSleepTimer.m; sourceTree = "<group>"; };
 		29FF93881452235F0000B6BB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		5D1CF74B138C7BAB008979B3 /* DBMetadata+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DBMetadata+Additions.h"; sourceTree = "<group>"; };
-		5D1CF74C138C7BAB008979B3 /* DBMetadata+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DBMetadata+Additions.m"; sourceTree = "<group>"; };
 		5D348D871386FDA200BB0047 /* WDImportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDImportController.h; sourceTree = "<group>"; };
 		5D348D881386FDA200BB0047 /* WDImportController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDImportController.m; sourceTree = "<group>"; };
-		5D3C1A74138771900040D261 /* dropbox_icon_directory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropbox_icon_directory.png; path = Images/dropbox_icon_directory.png; sourceTree = "<group>"; };
-		5D3C1A75138771900040D261 /* dropbox_icon_generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropbox_icon_generic.png; path = Images/dropbox_icon_generic.png; sourceTree = "<group>"; };
+		5D3C1A74138771900040D261 /* cloud_icon_directory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_icon_directory.png; path = Images/cloud_icon_directory.png; sourceTree = "<group>"; };
+		5D3C1A75138771900040D261 /* cloud_icon_generic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_icon_generic.png; path = Images/cloud_icon_generic.png; sourceTree = "<group>"; };
 		6B00DA511405F65E00E45409 /* WDActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivity.h; sourceTree = "<group>"; };
 		6B00DA521405F65E00E45409 /* WDActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDActivity.m; sourceTree = "<group>"; };
 		6B00DA581406022B00E45409 /* WDActivityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDActivityManager.h; sourceTree = "<group>"; };
@@ -527,8 +523,8 @@
 		6B1DDBDD1582C890008B29A9 /* shadow_topright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_topright.png; path = Images/shadow_topright.png; sourceTree = "<group>"; };
 		6B1E107315ED6D41006128D8 /* Samples HD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Samples HD"; sourceTree = "<group>"; };
 		6B1E108815EFEB57006128D8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		6B215C3C15DA050E0078DD7F /* dropbox_icon_brushes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropbox_icon_brushes.png; path = Images/dropbox_icon_brushes.png; sourceTree = "<group>"; };
-		6B215C3D15DA050E0078DD7F /* dropbox_icon_brushes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dropbox_icon_brushes@2x.png"; path = "Images/dropbox_icon_brushes@2x.png"; sourceTree = "<group>"; };
+		6B215C3C15DA050E0078DD7F /* cloud_icon_brushes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_icon_brushes.png; path = Images/cloud_icon_brushes.png; sourceTree = "<group>"; };
+		6B215C3D15DA050E0078DD7F /* cloud_icon_brushes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud_icon_brushes@2x.png"; path = "Images/cloud_icon_brushes@2x.png"; sourceTree = "<group>"; };
 		6B219CB81510718B00761F18 /* checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkmark@2x.png"; path = "Images/checkmark@2x.png"; sourceTree = "<group>"; };
 		6B219CB91510718B00761F18 /* hidden@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hidden@2x.png"; path = "Images/hidden@2x.png"; sourceTree = "<group>"; };
 		6B219CBA1510718B00761F18 /* lock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lock@2x.png"; path = "Images/lock@2x.png"; sourceTree = "<group>"; };
@@ -730,7 +726,6 @@
 		6B616773137B429200BEC0BA /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
 		6B624042155CE1B2003EB9B3 /* WDPaintingSizeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDPaintingSizeController.h; sourceTree = "<group>"; };
 		6B624043155CE1B2003EB9B3 /* WDPaintingSizeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDPaintingSizeController.m; sourceTree = "<group>"; };
-		6B6240501561B941003EB9B3 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
 		6B648824154B4EBD0066C950 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = Images/play.png; sourceTree = "<group>"; };
 		6B648825154B4EBD0066C950 /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play@2x.png"; path = "Images/play@2x.png"; sourceTree = "<group>"; };
 		6B64884C155A02810066C950 /* WDExportController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDExportController.h; sourceTree = "<group>"; };
@@ -883,7 +878,7 @@
 		6BCD530112400017002FCB27 /* WDMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDMenuItem.m; sourceTree = "<group>"; };
 		6BCD532012400017002FCB27 /* WDThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDThumbnailView.h; sourceTree = "<group>"; };
 		6BCD532112400017002FCB27 /* WDThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDThumbnailView.m; sourceTree = "<group>"; };
-		6BCF3AD813BA2F9F00A95E0D /* dropbox_icon_unsupported.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dropbox_icon_unsupported.png; path = Images/dropbox_icon_unsupported.png; sourceTree = "<group>"; };
+		6BCF3AD813BA2F9F00A95E0D /* cloud_icon_unsupported.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_icon_unsupported.png; path = Images/cloud_icon_unsupported.png; sourceTree = "<group>"; };
 		6BD04006156E028400C58AA6 /* WDBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDBar.h; sourceTree = "<group>"; };
 		6BD04007156E028400C58AA6 /* WDBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDBar.m; sourceTree = "<group>"; };
 		6BD0400A156E888A00C58AA6 /* WDColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDColorWell.h; sourceTree = "<group>"; };
@@ -901,9 +896,9 @@
 		6BD5959A1524C2A70014A798 /* blitFromHueChromaLuma.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = blitFromHueChromaLuma.fsh; path = Shaders/blitFromHueChromaLuma.fsh; sourceTree = "<group>"; };
 		6BD5959B1524C2A70014A798 /* toHueChromaLuma.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = toHueChromaLuma.fsh; path = Shaders/toHueChromaLuma.fsh; sourceTree = "<group>"; };
 		6BD595A115252AEF0014A798 /* hue_shifter_overlay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hue_shifter_overlay@2x.png"; path = "Images/hue_shifter_overlay@2x.png"; sourceTree = "<group>"; };
-		6BD595A315252B260014A798 /* dropbox_icon_directory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dropbox_icon_directory@2x.png"; path = "Images/dropbox_icon_directory@2x.png"; sourceTree = "<group>"; };
-		6BD595A515252B260014A798 /* dropbox_icon_generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dropbox_icon_generic@2x.png"; path = "Images/dropbox_icon_generic@2x.png"; sourceTree = "<group>"; };
-		6BD595A815252B270014A798 /* dropbox_icon_unsupported@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dropbox_icon_unsupported@2x.png"; path = "Images/dropbox_icon_unsupported@2x.png"; sourceTree = "<group>"; };
+		6BD595A315252B260014A798 /* cloud_icon_directory@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud_icon_directory@2x.png"; path = "Images/cloud_icon_directory@2x.png"; sourceTree = "<group>"; };
+		6BD595A515252B260014A798 /* cloud_icon_generic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud_icon_generic@2x.png"; path = "Images/cloud_icon_generic@2x.png"; sourceTree = "<group>"; };
+		6BD595A815252B270014A798 /* cloud_icon_unsupported@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud_icon_unsupported@2x.png"; path = "Images/cloud_icon_unsupported@2x.png"; sourceTree = "<group>"; };
 		6BD595B415252D8D0014A798 /* WDToolButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDToolButton.h; sourceTree = "<group>"; };
 		6BD595B515252D8F0014A798 /* WDToolButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDToolButton.m; sourceTree = "<group>"; };
 		6BD595B7152BAD1A0014A798 /* swatch_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swatch_add.png; path = Images/swatch_add.png; sourceTree = "<group>"; };
@@ -1006,7 +1001,6 @@
 				6BEB5AF0147DA84D00686784 /* Twitter.framework in Frameworks */,
 				C01FCF5008A95454005424A5 /* Accelerate.framework in Frameworks */,
 				6B8C1C3D15375EAF00539F73 /* CoreVideo.framework in Frameworks */,
-				6B6240511561B941003EB9B3 /* DropboxSDK.framework in Frameworks */,
 				6BDB83CA1593CDC10037E10B /* libT1PogoManager.a in Frameworks */,
 				6BDB83CE1593D2710037E10B /* AVFoundation.framework in Frameworks */,
 				6BDB83D01593D2920037E10B /* CoreBluetooth.framework in Frameworks */,
@@ -1093,7 +1087,6 @@
 				6BD7071812AD011F004E07C9 /* CoreGraphics.framework */,
 				6BD7071912AD011F004E07C9 /* CoreText.framework */,
 				6B8C1C3C15375EAF00539F73 /* CoreVideo.framework */,
-				6B6240501561B941003EB9B3 /* DropboxSDK.framework */,
 				6BD7071A12AD011F004E07C9 /* Foundation.framework */,
 				6BD7071B12AD011F004E07C9 /* MessageUI.framework */,
 				6BDDFA6B13E7924600B10774 /* MobileCoreServices.framework */,
@@ -1130,19 +1123,19 @@
 			name = Export;
 			sourceTree = "<group>";
 		};
-		6B08CE2E1821CB95001AFC3C /* Dropbox */ = {
+		6B08CE2E1821CB95001AFC3C /* Cloud */ = {
 			isa = PBXGroup;
 			children = (
-				6B215C3C15DA050E0078DD7F /* dropbox_icon_brushes.png */,
-				6B215C3D15DA050E0078DD7F /* dropbox_icon_brushes@2x.png */,
-				5D3C1A74138771900040D261 /* dropbox_icon_directory.png */,
-				6BD595A315252B260014A798 /* dropbox_icon_directory@2x.png */,
-				5D3C1A75138771900040D261 /* dropbox_icon_generic.png */,
-				6BD595A515252B260014A798 /* dropbox_icon_generic@2x.png */,
-				6BCF3AD813BA2F9F00A95E0D /* dropbox_icon_unsupported.png */,
-				6BD595A815252B270014A798 /* dropbox_icon_unsupported@2x.png */,
+				6B215C3C15DA050E0078DD7F /* cloud_icon_brushes.png */,
+				6B215C3D15DA050E0078DD7F /* cloud_icon_brushes@2x.png */,
+				5D3C1A74138771900040D261 /* cloud_icon_directory.png */,
+				6BD595A315252B260014A798 /* cloud_icon_directory@2x.png */,
+				5D3C1A75138771900040D261 /* cloud_icon_generic.png */,
+				6BD595A515252B260014A798 /* cloud_icon_generic@2x.png */,
+				6BCF3AD813BA2F9F00A95E0D /* cloud_icon_unsupported.png */,
+				6BD595A815252B270014A798 /* cloud_icon_unsupported@2x.png */,
 			);
-			name = Dropbox;
+			name = Cloud;
 			sourceTree = "<group>";
 		};
 		6B40CCDE181FC9BA00004FB2 /* en.lproj */ = {
@@ -1576,7 +1569,7 @@
 			children = (
 				6BDBC636130E1FD000BC3BCA /* App */,
 				6B7DF84C1594EEC70053AE9B /* Canvas Shadow */,
-				6B08CE2E1821CB95001AFC3C /* Dropbox */,
+				6B08CE2E1821CB95001AFC3C /* Cloud */,
 				6B08CE2D1821B2F4001AFC3C /* Export */,
 				6B4A15F615D38D2000348E54 /* Icons */,
 				6B40CDB6181FD0BA00004FB2 /* Tools */,
@@ -1591,8 +1584,6 @@
 		6BCD535F1240001D002FCB27 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				5D1CF74B138C7BAB008979B3 /* DBMetadata+Additions.h */,
-				5D1CF74C138C7BAB008979B3 /* DBMetadata+Additions.m */,
 				6B40CD92181FCFFE00004FB2 /* NSArray+Additions.h */,
 				6B40CD93181FCFFE00004FB2 /* NSArray+Additions.m */,
 				6B40CD94181FCFFE00004FB2 /* NSData+Additions.h */,
@@ -1998,9 +1989,9 @@
 				6B08CE00182188C3001AFC3C /* stylus_unselected@2x.png in Resources */,
 				6B8E557B181F20400022F573 /* duplicate-modern@2x.png in Resources */,
 				6B08CE08182189A0001AFC3C /* stylus_unselected-modern.png in Resources */,
-				5D3C1A76138771900040D261 /* dropbox_icon_directory.png in Resources */,
-				5D3C1A77138771900040D261 /* dropbox_icon_generic.png in Resources */,
-				6BCF3AD913BA2F9F00A95E0D /* dropbox_icon_unsupported.png in Resources */,
+				5D3C1A76138771900040D261 /* cloud_icon_directory.png in Resources */,
+				5D3C1A77138771900040D261 /* cloud_icon_generic.png in Resources */,
+				6BCF3AD913BA2F9F00A95E0D /* cloud_icon_unsupported.png in Resources */,
 				6B8E55A0181F2B720022F573 /* AppIcon57x57.png in Resources */,
 				6BDD92E413DE744F0005F55D /* hue_shifter_overlay.png in Resources */,
 				6B8E558C181F2A0F0022F573 /* AppIcon29x29.png in Resources */,
@@ -2033,11 +2024,11 @@
 				6BAAD0CC151B0AE3006FB82B /* redo@2x.png in Resources */,
 				6BAAD0CD151B0AE3006FB82B /* undo@2x.png in Resources */,
 				6BD595A215252AF10014A798 /* hue_shifter_overlay@2x.png in Resources */,
-				6BD595A915252B280014A798 /* dropbox_icon_directory@2x.png in Resources */,
+				6BD595A915252B280014A798 /* cloud_icon_directory@2x.png in Resources */,
 				6BE58FD0181F33720002AE0E /* AppIcon29x29-Classic@2x.png in Resources */,
-				6BD595AB15252B280014A798 /* dropbox_icon_generic@2x.png in Resources */,
+				6BD595AB15252B280014A798 /* cloud_icon_generic@2x.png in Resources */,
 				6BE58FCF181F33720002AE0E /* AppIcon29x29-Classic.png in Resources */,
-				6BD595AE15252B280014A798 /* dropbox_icon_unsupported@2x.png in Resources */,
+				6BD595AE15252B280014A798 /* cloud_icon_unsupported@2x.png in Resources */,
 				6B08CE10182192E0001AFC3C /* action-modern@2x.png in Resources */,
 				6B08CE171821A69F001AFC3C /* actionLandscape-modern.png in Resources */,
 				6B40CDC2181FD0BA00004FB2 /* brush_landscape@2x.png in Resources */,
@@ -2143,9 +2134,9 @@
 				6B40CE85181FD36600004FB2 /* Export.xib in Resources */,
 				6B08CDF818218625001AFC3C /* checkmark-modern@2x.png in Resources */,
 				6B40CE89181FD36600004FB2 /* LayerCell~iphone.xib in Resources */,
-				6B215C3E15DA050E0078DD7F /* dropbox_icon_brushes.png in Resources */,
+				6B215C3E15DA050E0078DD7F /* cloud_icon_brushes.png in Resources */,
 				6B40CE9A181FD3B200004FB2 /* DocSizes.plist in Resources */,
-				6B215C3F15DA050E0078DD7F /* dropbox_icon_brushes@2x.png in Resources */,
+				6B215C3F15DA050E0078DD7F /* cloud_icon_brushes@2x.png in Resources */,
 				6B40CE82181FD36600004FB2 /* ColorPicker.xib in Resources */,
 				6B40CDC3181FD0BA00004FB2 /* eraser.png in Resources */,
 				6B40CE80181FD36600004FB2 /* Brushes.xib in Resources */,
@@ -2235,7 +2226,6 @@
 				6B308FB713B56A8A000665C3 /* WDColorAdjustmentController.m in Sources */,
 				6B308FBA13B56B59000665C3 /* WDColorBalanceController.m in Sources */,
 				5D348D891386FDA200BB0047 /* WDImportController.m in Sources */,
-				5D1CF74D138C7BAB008979B3 /* DBMetadata+Additions.m in Sources */,
 				6B23AA5F13BBECD800C9B5F0 /* WDModalTitleBar.m in Sources */,
 				6B00DA531405F65F00E45409 /* WDActivity.m in Sources */,
 				6B00DA5A1406022B00E45409 /* WDActivityManager.m in Sources */,
@@ -2377,8 +2367,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2398,8 +2388,8 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -2411,8 +2401,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2430,7 +2420,7 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2464,8 +2454,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2483,8 +2473,8 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -2521,8 +2511,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Brushes.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: LI Leichuan (YK29UXBS4P)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2541,8 +2531,8 @@
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
 				PRODUCT_NAME = Brushes;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E0A78D17-235A-4E6C-ABE9-3BFAA866A343";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

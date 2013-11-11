@@ -10,23 +10,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DropboxSDK/DBRestClient.h>
-
 
 @protocol WDImportControllerDelegate;
 
-@interface WDImportController : UIViewController <DBRestClientDelegate, UIAlertViewDelegate> {
+@interface WDImportController : UIViewController <UIAlertViewDelegate> {
 	UIBarButtonItem					*importButton_;
 	IBOutlet UIActivityIndicatorView	*activityIndicator_;
 	IBOutlet UITableView				*contentsTable_;
-	NSArray							*dropboxItems_;
+	NSArray							*CloudItems_;
 	NSMutableSet						*selectedItems_;
 	NSMutableDictionary				*itemsKeyedByImagePath_;
 	NSMutableSet						*itemsFailedImageLoading_;
 	NSString							*remotePath_;
 	BOOL								isRoot_;
 	NSString							*imageCacheDirectory_;
-	DBRestClient						*dropboxClient_;
 	NSFileManager					*fileManager_;
 	
 }
@@ -43,5 +40,5 @@
 
 @protocol WDImportControllerDelegate <NSObject>
 @optional
-- (void) importController:(WDImportController *)controller didSelectDropboxItems:(NSArray *)dropboxItems;
+- (void) importController:(WDImportController *)controller didSelectCloudItems:(NSArray *)CloudItems;
 @end

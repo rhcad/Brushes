@@ -18,14 +18,11 @@
 #import "WDDocument.h"
 #import "WDStylusManager.h"
 
-NSString *WDDropboxWasUnlinkedNotification = @"WDDropboxWasUnlinkedNotification";
-
 @implementation WDAppDelegate
 
 @synthesize window;
 @synthesize navigationController;
 @synthesize browserController;
-@synthesize performAfterDropboxLoginBlock;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -41,18 +38,6 @@ NSString *WDDropboxWasUnlinkedNotification = @"WDDropboxWasUnlinkedNotification"
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
-    #if !WD_DEBUG
-    #warning "Set appropriate Dropbox keys before submitting to the app store."
-    #endif
-    
-    NSLog(@"No Dropbox Keys!");
-    NSString *appKey = @"xxxx";
-    NSString *appSecret = @"xxxx";
-    
-    DBSession *session = [[DBSession alloc] initWithAppKey:appKey appSecret:appSecret root:kDBRootDropbox];
-    session.delegate = self; // DBSessionDelegate methods allow you to handle re-authenticating
-    [DBSession setSharedSession:session];
-    
     [self setupDefaults];
     
     browserController = [[WDBrowserController alloc] initWithNibName:nil bundle:nil];
@@ -63,9 +48,6 @@ NSString *WDDropboxWasUnlinkedNotification = @"WDDropboxWasUnlinkedNotification"
     
     window.rootViewController = navigationController;
     [window makeKeyAndVisible];
-
-    // use this line to forget registered Pogo Connects
-    //[[NSUserDefaults standardUserDefaults] removeObjectForKey:@"T1PogoManagerKnownPeripherals"];
     
     // create the shared stylus manager so it can set things up for the pressure pens
     [WDStylusManager sharedStylusManager];
@@ -86,16 +68,6 @@ void uncaughtExceptionHandler(NSException *exception) {
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    if ([[DBSession sharedSession] handleOpenURL:url]) {
-        if ([[DBSession sharedSession] isLinked]) {
-            if (self.performAfterDropboxLoginBlock) {
-                self.performAfterDropboxLoginBlock();
-                self.performAfterDropboxLoginBlock = nil;
-            }
-        }
-        return YES;
-    }
-    
     NSError *error = nil;
     NSString *name = [[WDPaintingManager sharedInstance] installPaintingFromURL:url error:&error];
 
@@ -122,49 +94,6 @@ void uncaughtExceptionHandler(NSException *exception) {
     }
     
     return (name ? YES : NO);
-}
-
-- (void)sessionDidReceiveAuthorizationFailure:(DBSession *)session userId:(NSString *)userId
-{
-    
-}
-
-#pragma mark -
-#pragma mark Dropbox unlinking
-
-- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    if (buttonIndex == alertView.cancelButtonIndex) {
-        return;
-    }
-    
-    if ([[DBSession sharedSession] isLinked]) {
-        [[DBSession sharedSession] unlinkAll];
-    } 
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:WDDropboxWasUnlinkedNotification object:self];
-}
-
-- (void) unlinkDropbox
-{
-    if (![[DBSession sharedSession] isLinked]) {
-        return;
-    } 
-    
-    NSString *title = NSLocalizedString(@"Unlink Dropbox", @"Unlink Dropbox");
-    NSString *message = NSLocalizedString(@"Are you sure you want to unlink your Dropbox account?", @"Are you sure you want to unlink your Dropbox account?");
-    
-    NSString *unlinkButtonTitle = NSLocalizedString(@"Unlink", @"Title of Unlink button");
-    NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", @"Title of Cancel button");
-    
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
-                                                        message:message
-                                                       delegate:self
-                                              cancelButtonTitle:nil
-                                              otherButtonTitles:unlinkButtonTitle, cancelButtonTitle, nil];
-    alertView.cancelButtonIndex = 1;
-    
-    [alertView show];
 }
 
 @end
