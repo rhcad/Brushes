@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0225D52F1926617E00898D39 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225D52E1926617E00898D39 /* CoreMedia.framework */; };
-		0225D531192661A900898D39 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225D530192661A900898D39 /* AssetsLibrary.framework */; };
 		1D3623260D0F684500981E51 /* WDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* WDAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		29125EFB155205C3008239B3 /* WDEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = 29125EFA155205C3008239B3 /* WDEmail.m */; };
@@ -407,6 +405,14 @@
 		6BF9986815A67C7100AFBB3A /* merge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6BF9986615A67C7000AFBB3A /* merge@2x.png */; };
 		6BF9986F15A776EC00AFBB3A /* WDCellSelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9986E15A776EC00AFBB3A /* WDCellSelectionView.m */; };
 		6BFA802C1249CEDB00D1749C /* WDLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA802B1249CEDB00D1749C /* WDLayerCell.m */; };
+		B41C415718AC036200287B24 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B41C415618AC036200287B24 /* CoreMedia.framework */; };
+		B45DD5FA18B3DD7900DD3ACF /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B45DD5F918B3DD7900DD3ACF /* AssetsLibrary.framework */; };
+		B4A74D6618B7EEA2009A90C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A74D6518B7EEA2009A90C4 /* XCTest.framework */; };
+		B4A74D6718B7EEA2009A90C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD7071A12AD011F004E07C9 /* Foundation.framework */; };
+		B4A74D6818B7EEA2009A90C4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BD7071F12AD011F004E07C9 /* UIKit.framework */; };
+		B4A74D6E18B7EEA2009A90C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4A74D6C18B7EEA2009A90C4 /* InfoPlist.strings */; };
+		B4A74D7018B7EEA2009A90C4 /* Brushes4_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A74D6F18B7EEA2009A90C4 /* Brushes4_Tests.m */; };
+		B4A74D7A18B7EECB009A90C4 /* testStep.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A74D7918B7EECB009A90C4 /* testStep.m */; };
 		C01FCF5008A9545400542486 /* WDSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A9545400542485 /* WDSynchronizer.m */; };
 		C01FCF5008A954540054248D /* WDAddLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248C /* WDAddLayer.m */; };
 		C01FCF5008A9545400542490 /* WDDeleteLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C01FCF5008A954540054248F /* WDDeleteLayer.m */; };
@@ -415,12 +421,20 @@
 		C01FCF5008A95454005424A5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01FCF5008A95454005424A4 /* Accelerate.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B4A74D7218B7EEA2009A90C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D6058900D05DD3D006BFB54;
+			remoteInfo = Brushes4;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0225D52E1926617E00898D39 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		0225D530192661A900898D39 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* WDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* WDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Brushes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brushes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Brushes4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brushes4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29125EF9155205C3008239B3 /* WDEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDEmail.h; sourceTree = "<group>"; };
 		29125EFA155205C3008239B3 /* WDEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDEmail.m; sourceTree = "<group>"; };
 		2923AB27154614240021AC56 /* WDDocumentReplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDocumentReplay.h; sourceTree = "<group>"; };
@@ -520,7 +534,7 @@
 		6B1BE6A31548B59500D483EF /* lockMessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lockMessage.png; path = Images/lockMessage.png; sourceTree = "<group>"; };
 		6B1BE6A71548B69500D483EF /* hiddenMessage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hiddenMessage@2x.png"; path = "Images/hiddenMessage@2x.png"; sourceTree = "<group>"; };
 		6B1BE6A81548B69500D483EF /* lockMessage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "lockMessage@2x.png"; path = "Images/lockMessage@2x.png"; sourceTree = "<group>"; };
-		6B1BF3B41316294800005747 /* Brushes_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brushes_Prefix.pch; sourceTree = "<group>"; };
+		6B1BF3B41316294800005747 /* Brushes4_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brushes4_Prefix.pch; sourceTree = "<group>"; };
 		6B1DDBD61582C890008B29A9 /* shadow_bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_bottom.png; path = Images/shadow_bottom.png; sourceTree = "<group>"; };
 		6B1DDBD71582C890008B29A9 /* shadow_bottomleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_bottomleft.png; path = Images/shadow_bottomleft.png; sourceTree = "<group>"; };
 		6B1DDBD81582C890008B29A9 /* shadow_bottomright.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shadow_bottomright.png; path = Images/shadow_bottomright.png; sourceTree = "<group>"; };
@@ -704,7 +718,7 @@
 		6B40CE94181FD3B200004FB2 /* DocSizes_LowRes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DocSizes_LowRes.plist; path = PLists/DocSizes_LowRes.plist; sourceTree = "<group>"; };
 		6B40CE95181FD3B200004FB2 /* DocSizes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DocSizes.plist; path = PLists/DocSizes.plist; sourceTree = "<group>"; };
 		6B40CE96181FD3B200004FB2 /* ImportFormats.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ImportFormats.plist; path = PLists/ImportFormats.plist; sourceTree = "<group>"; };
-		6B40CE9C181FD50200004FB2 /* Brushes-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Brushes-Info.plist"; sourceTree = "<group>"; };
+		6B40CE9C181FD50200004FB2 /* Brushes4-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Brushes4-Info.plist"; sourceTree = "<group>"; };
 		6B42CC8A15BDCBED002253F2 /* straightBlit.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = straightBlit.fsh; path = Shaders/straightBlit.fsh; sourceTree = "<group>"; };
 		6B4D71D015645CCE00996FDD /* rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rotate@2x.png"; path = "Images/rotate@2x.png"; sourceTree = "<group>"; };
 		6B4D71D215645DEF00996FDD /* rotate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rotate.png; path = Images/rotate.png; sourceTree = "<group>"; };
@@ -976,6 +990,15 @@
 		6BF9986E15A776EC00AFBB3A /* WDCellSelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDCellSelectionView.m; sourceTree = "<group>"; };
 		6BFA802A1249CEDB00D1749C /* WDLayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDLayerCell.h; sourceTree = "<group>"; };
 		6BFA802B1249CEDB00D1749C /* WDLayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDLayerCell.m; sourceTree = "<group>"; };
+		B41C415618AC036200287B24 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		B45DD5F918B3DD7900DD3ACF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		B4A74D6418B7EEA2009A90C4 /* Brushes4 Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Brushes4 Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4A74D6518B7EEA2009A90C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B4A74D6B18B7EEA2009A90C4 /* Brushes4 Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Brushes4 Tests-Info.plist"; sourceTree = "<group>"; };
+		B4A74D6D18B7EEA2009A90C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4A74D6F18B7EEA2009A90C4 /* Brushes4_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Brushes4_Tests.m; sourceTree = "<group>"; };
+		B4A74D7118B7EEA2009A90C4 /* Brushes4 Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Brushes4 Tests-Prefix.pch"; sourceTree = "<group>"; };
+		B4A74D7918B7EECB009A90C4 /* testStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testStep.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542484 /* WDSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDSynchronizer.h; sourceTree = "<group>"; };
 		C01FCF5008A9545400542485 /* WDSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDSynchronizer.m; sourceTree = "<group>"; };
 		C01FCF5008A9545400542487 /* WDDocumentChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDocumentChange.h; sourceTree = "<group>"; };
@@ -996,8 +1019,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0225D531192661A900898D39 /* AssetsLibrary.framework in Frameworks */,
-				0225D52F1926617E00898D39 /* CoreMedia.framework in Frameworks */,
+				B45DD5FA18B3DD7900DD3ACF /* AssetsLibrary.framework in Frameworks */,
+				B41C415718AC036200287B24 /* CoreMedia.framework in Frameworks */,
 				29E41AC213F9B229000C3305 /* libz.dylib in Frameworks */,
 				29FF9389145223600000B6BB /* AudioToolbox.framework in Frameworks */,
 				6BD7072012AD011F004E07C9 /* CoreGraphics.framework in Frameworks */,
@@ -1017,6 +1040,16 @@
 				6BDB83CE1593D2710037E10B /* AVFoundation.framework in Frameworks */,
 				6BDB83D01593D2920037E10B /* CoreBluetooth.framework in Frameworks */,
 				6B29083616013C2400593812 /* Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4A74D6118B7EEA2009A90C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A74D6618B7EEA2009A90C4 /* XCTest.framework in Frameworks */,
+				B4A74D6818B7EEA2009A90C4 /* UIKit.framework in Frameworks */,
+				B4A74D6718B7EEA2009A90C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,7 +1078,8 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Brushes.app */,
+				1D6058910D05DD3D006BFB54 /* Brushes4.app */,
+				B4A74D6418B7EEA2009A90C4 /* Brushes4 Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1057,6 +1091,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				B4A74D6918B7EEA2009A90C4 /* Brushes4 Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -1066,7 +1101,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6B1BF3B41316294800005747 /* Brushes_Prefix.pch */,
+				6B1BF3B41316294800005747 /* Brushes4_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -1090,8 +1125,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0225D530192661A900898D39 /* AssetsLibrary.framework */,
-				0225D52E1926617E00898D39 /* CoreMedia.framework */,
+				B45DD5F918B3DD7900DD3ACF /* AssetsLibrary.framework */,
+				B41C415618AC036200287B24 /* CoreMedia.framework */,
 				29E41AC113F9B229000C3305 /* libz.dylib */,
 				6BDB83C11593CDC10037E10B /* T1PogoManager */,
 				C01FCF5008A95454005424A4 /* Accelerate.framework */,
@@ -1111,6 +1146,7 @@
 				6B29083516013C2400593812 /* Social.framework */,
 				6BEB5AEF147DA84D00686784 /* Twitter.framework */,
 				6BD7071F12AD011F004E07C9 /* UIKit.framework */,
+				B4A74D6518B7EEA2009A90C4 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1570,7 +1606,7 @@
 			children = (
 				6B08CDE7181FD664001AFC3C /* default_brushes.json */,
 				6B08CDE8181FD664001AFC3C /* Shaders.json */,
-				6B40CE9C181FD50200004FB2 /* Brushes-Info.plist */,
+				6B40CE9C181FD50200004FB2 /* Brushes4-Info.plist */,
 				6B40CE93181FD3B200004FB2 /* Defaults.plist */,
 				6B40CE94181FD3B200004FB2 /* DocSizes_LowRes.plist */,
 				6B40CE95181FD3B200004FB2 /* DocSizes.plist */,
@@ -1821,6 +1857,26 @@
 			name = App;
 			sourceTree = "<group>";
 		};
+		B4A74D6918B7EEA2009A90C4 /* Brushes4 Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B4A74D7918B7EECB009A90C4 /* testStep.m */,
+				B4A74D6F18B7EEA2009A90C4 /* Brushes4_Tests.m */,
+				B4A74D6A18B7EEA2009A90C4 /* Supporting Files */,
+			);
+			path = "Brushes4 Tests";
+			sourceTree = "<group>";
+		};
+		B4A74D6A18B7EEA2009A90C4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4A74D6B18B7EEA2009A90C4 /* Brushes4 Tests-Info.plist */,
+				B4A74D6C18B7EEA2009A90C4 /* InfoPlist.strings */,
+				B4A74D7118B7EEA2009A90C4 /* Brushes4 Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C01FCF5008A9545400542494 /* Document Updates */ = {
 			isa = PBXGroup;
 			children = (
@@ -1872,9 +1928,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Brushes */ = {
+		1D6058900D05DD3D006BFB54 /* Brushes4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Brushes" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Brushes4" */;
 			buildPhases = (
 				6BDA5AC7181FC6A6006F6791 /* ShellScript */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
@@ -1886,10 +1942,28 @@
 			);
 			dependencies = (
 			);
-			name = Brushes;
+			name = Brushes4;
 			productName = Pens;
-			productReference = 1D6058910D05DD3D006BFB54 /* Brushes.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Brushes4.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B4A74D6318B7EEA2009A90C4 /* Brushes4 Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A74D7818B7EEA2009A90C4 /* Build configuration list for PBXNativeTarget "Brushes4 Tests" */;
+			buildPhases = (
+				B4A74D6018B7EEA2009A90C4 /* Sources */,
+				B4A74D6118B7EEA2009A90C4 /* Frameworks */,
+				B4A74D6218B7EEA2009A90C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4A74D7318B7EEA2009A90C4 /* PBXTargetDependency */,
+			);
+			name = "Brushes4 Tests";
+			productName = "Brushes4 Tests";
+			productReference = B4A74D6418B7EEA2009A90C4 /* Brushes4 Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -1901,7 +1975,7 @@
 				ORGANIZATIONNAME = "Taptrix, Inc.";
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
-						DevelopmentTeam = CQ46W8F62S;
+						DevelopmentTeam = RT2TN48GAN;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -1911,9 +1985,12 @@
 							};
 						};
 					};
+					B4A74D6318B7EEA2009A90C4 = {
+						TestTargetID = 1D6058900D05DD3D006BFB54;
+					};
 				};
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Brushes" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Brushes4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -1929,7 +2006,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Brushes */,
+				1D6058900D05DD3D006BFB54 /* Brushes4 */,
+				B4A74D6318B7EEA2009A90C4 /* Brushes4 Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -2173,6 +2251,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4A74D6218B7EEA2009A90C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A74D6E18B7EEA2009A90C4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -2366,7 +2452,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4A74D6018B7EEA2009A90C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4A74D7018B7EEA2009A90C4 /* Brushes4_Tests.m in Sources */,
+				B4A74D7A18B7EECB009A90C4 /* testStep.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4A74D7318B7EEA2009A90C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D6058900D05DD3D006BFB54 /* Brushes4 */;
+			targetProxy = B4A74D7218B7EEA2009A90C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6B40CCDF181FC9BA00004FB2 /* Localizable.strings */ = {
@@ -2375,6 +2478,14 @@
 				6B40CCE0181FC9BA00004FB2 /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B4A74D6C18B7EEA2009A90C4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4A74D6D18B7EEA2009A90C4 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -2396,16 +2507,17 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Brushes_Prefix.pch;
+				GCC_PREFIX_HEADER = Brushes4_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "$(SRCROOT)/Brushes-Info.plist";
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "Brushes4-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
-				PRODUCT_NAME = Brushes;
+				PRODUCT_NAME = Brushes4;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -2428,16 +2540,17 @@
 					/Users/sprang/Development/Brushes,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Brushes_Prefix.pch;
+				GCC_PREFIX_HEADER = Brushes4_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "$(SRCROOT)/Brushes-Info.plist";
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "Brushes4-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
-				PRODUCT_NAME = Brushes;
+				PRODUCT_NAME = Brushes4;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2481,16 +2594,17 @@
 					/Users/sprang/Development/Brushes,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Brushes_Prefix.pch;
+				GCC_PREFIX_HEADER = Brushes4_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "$(SRCROOT)/Brushes-Info.plist";
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "Brushes4-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
-				PRODUCT_NAME = Brushes;
+				PRODUCT_NAME = Brushes4;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -2538,23 +2652,196 @@
 					/Users/sprang/Development/Brushes,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Brushes_Prefix.pch;
+				GCC_PREFIX_HEADER = Brushes4_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INFOPLIST_FILE = "$(SRCROOT)/Brushes-Info.plist";
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "Brushes4-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/T1PogoManager\"",
 				);
-				PRODUCT_NAME = Brushes;
+				PRODUCT_NAME = Brushes4;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = "Ad Hoc";
+		};
+		B4A74D7418B7EEA2009A90C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brushes4.app/Brushes4";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brushes4 Tests/Brushes4 Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Brushes4 Tests/Brushes4 Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B4A74D7518B7EEA2009A90C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brushes4.app/Brushes4";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brushes4 Tests/Brushes4 Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Brushes4 Tests/Brushes4 Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		B4A74D7618B7EEA2009A90C4 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brushes4.app/Brushes4";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brushes4 Tests/Brushes4 Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Brushes4 Tests/Brushes4 Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Distribution;
+		};
+		B4A74D7718B7EEA2009A90C4 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Brushes4.app/Brushes4";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Brushes4 Tests/Brushes4 Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "Brushes4 Tests/Brushes4 Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = "Ad Hoc";
 		};
@@ -2605,7 +2892,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Brushes" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Brushes4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -2616,7 +2903,18 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Brushes" */ = {
+		B4A74D7818B7EEA2009A90C4 /* Build configuration list for PBXNativeTarget "Brushes4 Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4A74D7418B7EEA2009A90C4 /* Debug */,
+				B4A74D7518B7EEA2009A90C4 /* Release */,
+				B4A74D7618B7EEA2009A90C4 /* Distribution */,
+				B4A74D7718B7EEA2009A90C4 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Brushes4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
